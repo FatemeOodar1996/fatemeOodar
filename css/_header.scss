@@ -1,0 +1,19 @@
+@import "./color";
+@import "./fonts";
+
+@mixin flexCenter($direction, $background) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+    background: $background;
+    height: 100px;
+    font-family: "monoHeavy";
+}
+
+.header{
+    @include flexCenter(column,$black);
+    color: $blue;
+    font-size: 30px;
+   
+}

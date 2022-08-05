@@ -1,0 +1,7 @@
+@import "./color";
+@import "./fonts";
+@import "./header";
+
+.footer{
+    @include flexCenter(column,$darkGray);
+}
