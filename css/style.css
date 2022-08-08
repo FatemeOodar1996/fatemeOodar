@@ -58,4 +58,30 @@
   background: #2a2a2a;
   height: 100px;
   font-family: "monoHeavy";
+}
+
+nav {
+  background-color: #1d1d1d;
+  padding: 2rem 0;
+}
+nav .navbar-brand {
+  font-size: 20px;
+  font-family: "monoHeavy";
+  background-image: linear-gradient(90deg, #08fdd8, #FD1056);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+nav .nav-item a {
+  font-size: 13PX;
+  color: #ababab !important;
+  font-family: "monoMedium";
+}
+nav .nav-item a:hover {
+  color: #08fdd8 !important;
+}
+nav .nav-item a span {
+  color: #08fdd8 !important;
 }/*# sourceMappingURL=style.css.map */

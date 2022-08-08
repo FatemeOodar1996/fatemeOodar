@@ -5,3 +5,30 @@
 .footer{
     @include flexCenter(column,$darkGray);
 }
+
+nav{
+    background-color: $black;
+    padding: 2rem 0;
+    .navbar-brand{
+        font-size: 20px;
+        font-family: "monoHeavy";
+        background-image: linear-gradient(90deg, $blue, $pink);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    .nav-item a{
+        font-size: 13PX;
+        color: $textGray !important;
+        font-family: "monoMedium";
+        &:hover{
+            color: $blue !important;
+        }
+        span{ 
+            color: $blue !important;
+        }
+    }
+}
+
