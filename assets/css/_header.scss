@@ -11,9 +11,8 @@
     font-family: "monoHeavy";
 }
 
-.header{
-    @include flexCenter(column,$black);
-    color: $blue;
+.header {
+    @include flexCenter(column, var(--black));
+    color: var(--blue);
     font-size: 30px;
-   
 }

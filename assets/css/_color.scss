@@ -1,0 +1,17 @@
+html[theme="dark"] {
+    --clr-blue: #08fdd8;
+    --clr-pink: #fd1056;
+    --clr-text-gray: #ababab;
+    --clr-light-gray: #e0e7fd;
+    --clr-main-background: #1d1d1d;
+    --clr-text: #fff;
+}
+
+html[theme="light"] {
+    --clr-blue: #08fdd8;
+    --clr-pink: #fd1056;
+    --clr-text-gray: #ababab;
+    --clr-light-gray: #ccd6f6;
+    --clr-text: #2a2a2a;
+    --clr-main-background: #ffffff;
+}

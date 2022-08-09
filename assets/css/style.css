@@ -1,0 +1,246 @@
+html[theme=dark] {
+  --clr-blue: #08fdd8;
+  --clr-pink: #fd1056;
+  --clr-text-gray: #ababab;
+  --clr-light-gray: #e0e7fd;
+  --clr-main-background: #1d1d1d;
+  --clr-text: #fff;
+}
+
+html[theme=light] {
+  --clr-blue: #08fdd8;
+  --clr-pink: #fd1056;
+  --clr-text-gray: #ababab;
+  --clr-light-gray: #ccd6f6;
+  --clr-text: #2a2a2a;
+  --clr-main-background: #ffffff;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Light.ttf);
+  font-weight: 100;
+}
+html[theme=dark] {
+  --clr-blue: #08fdd8;
+  --clr-pink: #fd1056;
+  --clr-text-gray: #ababab;
+  --clr-light-gray: #e0e7fd;
+  --clr-main-background: #1d1d1d;
+  --clr-text: #fff;
+}
+
+html[theme=light] {
+  --clr-blue: #08fdd8;
+  --clr-pink: #fd1056;
+  --clr-text-gray: #ababab;
+  --clr-light-gray: #ccd6f6;
+  --clr-text: #2a2a2a;
+  --clr-main-background: #ffffff;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Light.ttf);
+  font-weight: 100;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--black);
+  height: 100px;
+  font-family: "monoHeavy";
+  color: var(--blue);
+  font-size: 30px;
+}
+
+* {
+  font-family: "Rubik";
+}
+
+body {
+  background-color: var(--clr-main-background);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--darkGray);
+  height: 100px;
+  font-family: "monoHeavy";
+}
+
+nav {
+  margin: 2rem 0;
+}
+nav .container {
+  gap: 2rem;
+}
+nav .navbar-brand {
+  font-size: 20px;
+  font-weight: 900;
+  background-image: linear-gradient(90deg, var(--clr-blue), var(--clr-pink));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav .navbar-nav {
+  width: 100%;
+  gap: 1rem;
+}
+nav .nav-item a {
+  font-size: 14px;
+  color: var(--clr-text-gray) !important;
+  font-weight: 500;
+}
+nav .nav-item a:hover {
+  color: var(--clr-blue) !important;
+  transition: all 1s ease-out;
+}
+nav .nav-item a span {
+  color: var(--clr-blue);
+  font-weight: 500;
+}
+nav .btn {
+  border: 1px solid var(--clr-blue);
+  color: var(--clr-blue) !important;
+  transition: all ease-in-out 0.5;
+  font-size: 14px;
+  padding: 0.75rem 1.5rem;
+}
+nav .btn:hover {
+  background-color: rgba(0, 247, 255, 0.075);
+}
+
+main .hero {
+  display: flex;
+  height: 80vh;
+}
+main .hero .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: end;
+}
+main .hero .social-media .items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+}
+main .hero .social-media .items img {
+  color: #ababab;
+  width: 20px;
+  height: 20px;
+}
+main .hero .social-media .items .line {
+  background-color: var(--clr-text-gray);
+  width: 1px;
+  height: 8rem;
+}
+main .hero .email {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: end;
+}
+main .hero .email .items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+}
+main .hero .email .items span {
+  transform: rotate(-90deg);
+}
+main .hero .email .items .line {
+  background-color: var(--clr-text-gray);
+  width: 1px;
+  height: 8rem;
+}
+main .hero .about {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+main .hero .about > h1 {
+  color: var(--clr-blue);
+  font-weight: 400;
+  font-size: 1rem;
+}
+main .hero .about > h2 {
+  color: var(--clr-light-gray);
+  font-weight: 700;
+  font-size: 4rem;
+}
+main .hero .about > h3 {
+  color: var(--clr-text-gray);
+  font-weight: 700;
+  font-size: 4rem;
+}
+main .hero .about > p {
+  color: var(--clr-text-gray);
+  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 300;
+  width: max(40vw, 250px);
+}
+main .hero p > a {
+  color: var(--clr-blue);
+  text-decoration: none;
+}

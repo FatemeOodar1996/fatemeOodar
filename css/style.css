@@ -1,42 +1,52 @@
 @font-face {
-  font-family: monoHeavy;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoHeavy.otf);
+  font-weight: 900;
 }
 @font-face {
-  font-family: monoBold;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoBold.otf);
+  font-weight: 700;
 }
 @font-face {
-  font-family: monoMedium;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoMedium.otf);
+  font-weight: 500;
 }
 @font-face {
-  font-family: monoRegular;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoRegular.otf);
+  font-weight: 300;
 }
 @font-face {
-  font-family: monoLight;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoLight.otf);
+  font-weight: 100;
 }
 @font-face {
-  font-family: monoHeavy;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoHeavy.otf);
+  font-weight: 900;
 }
 @font-face {
-  font-family: monoBold;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoBold.otf);
+  font-weight: 700;
 }
 @font-face {
-  font-family: monoMedium;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoMedium.otf);
+  font-weight: 500;
 }
 @font-face {
-  font-family: monoRegular;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoRegular.otf);
+  font-weight: 300;
 }
 @font-face {
-  font-family: monoLight;
+  font-family: mono;
   src: url(../assets/fonts/SFMonoLight.otf);
+  font-weight: 100;
 }
 .header {
   display: flex;
@@ -48,6 +58,10 @@
   font-family: "monoHeavy";
   color: #08fdd8;
   font-size: 30px;
+}
+
+body {
+  background-color: #1d1d1d;
 }
 
 .footer {
@@ -64,6 +78,9 @@ nav {
   background-color: #1d1d1d;
   padding: 2rem 0;
 }
+nav .container {
+  gap: 2rem;
+}
 nav .navbar-brand {
   font-size: 20px;
   font-family: "monoHeavy";
@@ -71,17 +88,33 @@ nav .navbar-brand {
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+nav .navbar-toggler {
+  border: none;
+}
+nav .navbar-nav {
+  width: 100%;
+}
 nav .nav-item a {
-  font-size: 13PX;
+  font-size: 13px;
   color: #ababab !important;
   font-family: "monoMedium";
 }
 nav .nav-item a:hover {
   color: #08fdd8 !important;
+  transition: all 1s ease-out;
 }
 nav .nav-item a span {
+  color: #08fdd8;
+}
+nav .btn {
+  border: 1px solid #08fdd8;
   color: #08fdd8 !important;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.hero {
+  display: flex;
+}
