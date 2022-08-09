@@ -235,12 +235,67 @@ main .hero .about > h3 {
 }
 main .hero .about > p {
   color: var(--clr-text-gray);
-  font-weight: 900;
   font-size: 1rem;
   font-weight: 300;
-  width: max(40vw, 250px);
+  width: 62vw;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 4s steps(60, end);
+          animation: type 4s steps(60, end);
 }
-main .hero p > a {
+main .hero .about > p:nth-child(2) {
+  -webkit-animation: type2 8s steps(60, end);
+          animation: type2 8s steps(60, end);
+}
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+main .hero ::-moz-selection {
+  background: black;
+}
+main .hero ::selection {
+  background: black;
+}
+main .hero .about > p > a {
   color: var(--clr-blue);
   text-decoration: none;
 }

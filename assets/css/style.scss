@@ -133,14 +133,54 @@ main {
             font-weight: 700;
             font-size: 4rem;
         }
+
         .about > p {
             color: var(--clr-text-gray);
-            font-weight: 900;
             font-size: 1rem;
             font-weight: 300;
-            width: max(40vw, 250px);
+            width: 62vw;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: type 4s steps(60, end);
         }
-        p > a {
+
+        .about > p:nth-child(2) {
+            animation: type2 8s steps(60, end);
+        }
+
+        // .about > p a {
+        //     text-decoration: none;
+        // }
+
+        @keyframes type {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes type2 {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 0;
+            }
+            100% {
+                width: 100;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                opacity: 0;
+            }
+        }
+
+        ::selection {
+            background: black;
+        }
+
+        .about > p > a {
             color: var(--clr-blue);
             text-decoration: none;
         }
