@@ -134,9 +134,16 @@ nav .navbar-brand {
 nav .navbar-toggler {
   border: none;
 }
+nav .offcanvas {
+  width: 100% !important;
+  background-color: var(--clr-main-background) !important;
+  color: var(--bs-offcanvas-color);
+  transition: transform 1s ease-out;
+}
 nav .navbar-nav {
   width: 100%;
   gap: 1rem;
+  align-items: center;
 }
 nav .nav-item a {
   font-size: 14px;
@@ -360,5 +367,20 @@ main .hero .css-typing p:nth-child(2) {
   .social-media,
 .email {
     display: none !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    gap: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .offcanvas-body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+  }
+  .nav-link {
+    font-size: 1rem !important;
   }
 }
