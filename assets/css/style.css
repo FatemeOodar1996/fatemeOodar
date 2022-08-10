@@ -133,6 +133,7 @@ nav .navbar-brand {
 }
 nav .navbar-toggler {
   border: none;
+  padding: 0 !important;
 }
 nav .offcanvas {
   width: 100% !important;
@@ -368,6 +369,12 @@ main .hero .css-typing p:nth-child(2) {
 .email {
     display: none !important;
   }
+  .about > h2 {
+    font-size: calc(5vw + 16px) !important;
+  }
+  .about > h3 {
+    font-size: calc(5vw + 16px) !important;
+  }
 }
 @media screen and (max-width: 992px) {
   .navbar-nav {
@@ -382,5 +389,8 @@ main .hero .css-typing p:nth-child(2) {
   }
   .nav-link {
     font-size: 1rem !important;
+  }
+  main .hero .about {
+    gap: 2rem;
   }
 }

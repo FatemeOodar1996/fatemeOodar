@@ -30,6 +30,7 @@ nav {
     }
     .navbar-toggler {
         border: none;
+        padding: 0 !important;
     }
     .offcanvas {
         width: 100% !important;
@@ -283,6 +284,12 @@ main {
     .email {
         display: none !important;
     }
+    .about > h2 {
+        font-size: calc(5vw + 16px) !important;
+    }
+    .about > h3 {
+        font-size: calc(5vw + 16px) !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -298,5 +305,8 @@ main {
     }
     .nav-link {
         font-size: 1rem !important;
+    }
+    main .hero .about {
+        gap: 2rem;
     }
 }
