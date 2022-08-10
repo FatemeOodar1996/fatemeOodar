@@ -185,16 +185,19 @@ main .hero .social-media .items img {
   width: 20px;
   height: 20px;
 }
-main .hero .social-media .items .line {
-  background-color: var(--clr-text-gray);
+main .hero .social-media .items::after {
+  content: "";
+  display: block;
   width: 1px;
-  height: 8rem;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--clr-text-gray);
 }
 main .hero .email {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: end;
 }
 main .hero .email .items {
@@ -203,14 +206,20 @@ main .hero .email .items {
   gap: 2rem;
   align-items: center;
   justify-content: end;
+  width: 100%;
 }
-main .hero .email .items span {
+main .hero .email .items a {
   transform: rotate(-90deg);
+  color: var(--clr-text-gray);
+  text-decoration: none;
 }
-main .hero .email .items .line {
-  background-color: var(--clr-text-gray);
+main .hero .email .items::after {
+  content: "";
+  display: block;
   width: 1px;
-  height: 8rem;
+  height: 90px;
+  background-color: var(--clr-text-gray);
+  margin-top: 125px;
 }
 main .hero .about {
   display: flex;
@@ -226,76 +235,130 @@ main .hero .about > h1 {
 main .hero .about > h2 {
   color: var(--clr-light-gray);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: calc(4vw + 16px);
 }
 main .hero .about > h3 {
   color: var(--clr-text-gray);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: calc(4vw + 16px);
 }
-main .hero .about > p {
-  color: var(--clr-text-gray);
-  font-size: 1rem;
+main .hero .css-typing p {
   font-weight: 300;
-  width: 62vw;
+  color: var(--clr-text-gray);
+  border-right: 0.15em solid var(--clr-blue);
+  font-size: 1rem;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: type 4s steps(60, end);
-          animation: type 4s steps(60, end);
 }
-main .hero .about > p:nth-child(2) {
-  -webkit-animation: type2 8s steps(60, end);
-          animation: type2 8s steps(60, end);
+main .hero .css-typing p > a {
+  color: var(--clr-blue);
+  text-decoration: none;
 }
-@-webkit-keyframes type {
-  from {
-    width: 0;
-  }
+main .hero .css-typing p:nth-child(1) {
+  width: 100%;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type 5s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+main .hero .css-typing p:nth-child(2) {
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: type2 5s steps(40, end);
+  animation: type2 5s steps(40, end);
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 @keyframes type {
-  from {
-    width: 0;
-  }
-}
-@-webkit-keyframes type2 {
   0% {
     width: 0;
   }
-  50% {
-    width: 0;
+  30% {
+    border-right: 0.15em solid var(--clr-blue);
   }
   100% {
-    width: 100;
+    border: none;
+  }
+}
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  30% {
+    border-right: 0.15em solid var(--clr-blue);
+  }
+  100% {
+    border: none;
   }
 }
 @keyframes type2 {
   0% {
     width: 0;
   }
-  50% {
-    width: 0;
+  1% {
+    opacity: 1;
+  }
+  30% {
+    border-right: 0.15em solid var(--clr-blue);
   }
   100% {
-    width: 100;
+    opacity: 1;
+    border: none;
   }
 }
-@-webkit-keyframes blink {
-  to {
-    opacity: 0;
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  30% {
+    border-right: 0.15em solid var(--clr-blue);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes blink {
-  to {
-    opacity: 0;
+  50% {
+    border-color: transparent;
   }
 }
-main .hero ::-moz-selection {
-  background: black;
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
 }
-main .hero ::selection {
-  background: black;
-}
-main .hero .about > p > a {
-  color: var(--clr-blue);
-  text-decoration: none;
+
+@media screen and (max-width: 712px) {
+  .social-media,
+.email {
+    display: none !important;
+  }
 }
