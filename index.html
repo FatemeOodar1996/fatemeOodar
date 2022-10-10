@@ -11,6 +11,7 @@
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <title>Fateme Oodar</title>
     </head>
@@ -45,6 +46,7 @@
                         <div class="offcanvas-header">
                             <a class="navbar-brand" href="#">SOLL</a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <svg>
                                     <path
                                         d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
                                     />
@@ -85,47 +87,420 @@
             </nav>
         </header>
         <main>
-            <section class="hero container">
-                <div class="social-media col-1">
-                    <div class="items">
-                        <img src="./assets/img/iconmonstr-instagram-11.svg" alt="" srcset="" />
-                        <img src="./assets/img/iconmonstr-linkedin-1.svg" alt="" srcset="" />
-                        <img src="./assets/img/iconmonstr-github-1.svg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="about col-10">
-                    <h1>Hi, my name is</h1>
-                    <h2>Fateme Oodar</h2>
-                    <h3>I build things for the web.</h3>
-                    <div class="css-typing">
+            <section class="hero">
+                <div id="particles-js"></div>
+                <div class="container">
+                    <div class="hero-title">
+                        <span>Hi , my name is</span>
+                        <h1>Fateme Oodar</h1>
+                        <h2>I build things for the web.</h2>
+                        <p>I'm Frontend Developer Located in Iran</p>
                         <p>
-                            I’m a Front-End Developer located in Iran. I have a serious passion for UI effects,
-                            animations and creating intuitive, dynamic user experiences.
-                            <br />
-                        </p>
-                        <p>
-                            You can see my rezume samples on my
-                            <a href="https://github.com/FatemeOodar1996" target="_blank">GitHub account</a>
+                            You can see my resume in
+                            <a target="_blank" href="https://github.com/FatemeOodar1996">Github</a>
                         </p>
                     </div>
-                </div>
-                <div class="email col-1">
-                    <div class="items">
-                        <a href="">www.fateme.oodar1375@gmail.com</a>
-                        <!-- <div class="line"></div> -->
+                    <div class="hero-social">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#ababab"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#ababab"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#ababab"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                            />
+                        </svg>
                     </div>
                 </div>
-                <!-- <div class="email col-1">
-                    <div class="items">
-                        <span>www.fateme.oodar1375@gmail.com</span>
-                        <div class="line"></div>
+            </section>
+            <section class="about-me">
+                <div class="container">
+                    <div class="title">
+                        <h2>
+                            <span>01.</span>
+                            About Me
+                        </h2>
+                        <span class="line"></span>
                     </div>
-                </div> -->
+                    <div class="body row d-flex flex-column-reverse flex-md-row">
+                        <div class="description col-md-8 col-12">
+                            <p class="text-center text-md-start">
+                                Computer engineer who loves code, music, nature and photography based in sari, Iran! I
+                                specialize in Web Development and also passionate about UI/UX Design. It’s needless to
+                                say that I enjoy the work I do and I’m always open to expanding my knowledge and
+                                expertise.
+                            </p>
+                            <div class="d-flex skills">
+                                <div>
+                                    <h5>FRONT - END SKILLS</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>SCSS/SASS</li>
+                                            <li>Bootstrap</li>
+                                            <li>Tailwind</li>
+                                            <li>Responsive Design</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Git</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>React.js</li>
+                                            <li>Ajax</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>GRAPHIC SKILLS</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <ul>
+                                            <li>UI/UX Design</li>
+                                            <li>Logo Design</li>
+                                            <li>Cataloge</li>
+                                            <li>Banner</li>
+                                            <li>Motion Graphic</li>
+                                            <li>2D Animation</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Game UI</li>
+                                            <li>Character Design</li>
+                                            <li>Poster</li>
+                                            <li>React.js</li>
+                                            <li>Ajax</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image col-md-4 col-12">
+                            <img src="./assets/img/FatemeOodar.png" alt="" srcset="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works">
+                <div class="container">
+                    <div class="title">
+                        <h2>
+                            <span>02.</span>
+                            Where I’ve Worked
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="row d-flex align-items-start">
+                        <div
+                            class="nav flex-md-column justify-content-around nav-pills col-md-2"
+                            id="v-pills-tab"
+                            role="tablist"
+                            aria-orientation="vertical"
+                        >
+                            <button
+                                class="nav-link active"
+                                id="v-pills-home-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-home"
+                                aria-selected="true"
+                            >
+                                Namira
+                            </button>
+                            <button
+                                class="nav-link"
+                                id="v-pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-profile"
+                                aria-selected="false"
+                            >
+                                Movassagh
+                            </button>
+                            <button
+                                class="nav-link"
+                                id="v-pills-settings-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-settings"
+                                aria-selected="false"
+                            >
+                                Rastan
+                            </button>
+                        </div>
+                        <div class="tab-content col-md-10" id="v-pills-tabContent">
+                            <div
+                                class="tab-pane fade show active"
+                                id="v-pills-home"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-home-tab"
+                                tabindex="0"
+                            >
+                                <div class="tab-body">
+                                    <h5>
+                                        Namira Yarasan Vista =>
+                                        <span>Graphic Designer and Frontend Developer</span>
+                                    </h5>
+                                    <span>2018 - 2022</span>
+                                    <ul>
+                                        <li>Developing responsive websites using reactjs and nextjs</li>
+                                        <li>Working with versioning tools such as github and gitlab</li>
+                                        <li>Designing and developing modern web user interfaces</li>
+                                        <li>Designing modern mobile user interfaces</li>
+                                        <li>Working in a dynamic team</li>
+                                        <li>Utilizing agile project management methods such as scrum</li>
+                                        <li>Character Design</li>
+                                        <li>designing multiple catalogs, banners and brochures</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="v-pills-profile"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab"
+                                tabindex="0"
+                            >
+                                <div class="tab-body">
+                                    <h5>
+                                        Movassagh =>
+                                        <span>Motion Grapic Designer</span>
+                                    </h5>
+                                    <span>5 May 2018- 20 May 2018</span>
+                                    <ul>
+                                        <li>Motion Grapic</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div
+                                class="tab-pane fade"
+                                id="v-pills-settings"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab"
+                                tabindex="0"
+                            >
+                                <div class="tab-body">
+                                    <h5>
+                                        Rastan =>
+                                        <span>Motion Grapic Designer</span>
+                                    </h5>
+                                    <span>5 May 2017- 8 August 2017</span>
+                                    <ul>
+                                        <li>Motion Grapic</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <div class="title">
+                        <h2>
+                            <span>03.</span>
+                            Some Things I’ve Built
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="body">
+                        <div class="project d-flex row align-items-center">
+                            <div class="description col-md-6">
+                                <h3>Lipsum generator: Lorem Ipsum - All the facts</h3>
+                                <p>
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                    demonstrate the visual form of a document or a typeface without relying on
+                                    meaningful content. Lorem ipsum may be used as a placeholder before final copy is
+                                    available.
+                                </p>
+                            </div>
+                            <div class="swiper mySwiper col-md-6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="projectIamge image-one"></div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Book Mark Landingpage</h5>
+                                                <p class="card-text">
+                                                    A clean and simple website about organize your favourite websites.
+                                                </p>
+                                                <div class="tools">
+                                                    <span>HTML</span>
+                                                    <span>CSS</span>
+                                                    <span>JavaScript</span>
+                                                    <span>Bootstrap</span>
+                                                    <span>VSCode</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="projectIamge image-two"></div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Book Mark Landingpage</h5>
+                                                <p class="card-text">
+                                                    A clean and simple website about organize your favourite websites.
+                                                </p>
+                                                <div class="tools">
+                                                    <span>HTML</span>
+                                                    <span>CSS</span>
+                                                    <span>JavaScript</span>
+                                                    <span>Bootstrap</span>
+                                                    <span>VSCode</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="projectIamge image-three"></div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Book Mark Landingpage</h5>
+                                                <p class="card-text">
+                                                    A clean and simple website about organize your favourite websites.
+                                                </p>
+                                                <div class="tools">
+                                                    <span>HTML</span>
+                                                    <span>CSS</span>
+                                                    <span>JavaScript</span>
+                                                    <span>Bootstrap</span>
+                                                    <span>VSCode</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="projectIamge image-four"></div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Book Mark Landingpage</h5>
+                                                <p class="card-text">
+                                                    A clean and simple website about organize your favourite websites.
+                                                </p>
+                                                <div class="tools">
+                                                    <span>HTML</span>
+                                                    <span>CSS</span>
+                                                    <span>JavaScript</span>
+                                                    <span>Bootstrap</span>
+                                                    <span>VSCode</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="graphic-projects">
+                <div class="">
+                    <div class="title">
+                        <h2>
+                            <span>02.</span>
+                            UI Sampels
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="body">
+                        <div class="swiper graphicSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide image-one"></div>
+                                <div class="swiper-slide image-two"></div>
+                                <div class="swiper-slide image-three"></div>
+                                <div class="swiper-slide image-four"></div>
+                                <div class="swiper-slide image-five"></div>
+                                <div class="swiper-slide image-six"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="d-flex flex-column align-items-center">
+                        <a class="title">Start building your website.</a>
+                        <p>
+                            I’m always looking for any new opportunities, my inbox is always open. Whether you have a
+                            question or just want to say hi, I’ll try my best to get back to you!
+                        </p>
+                        <!-- <a class="email" href="mailto:fateme.oodar75@gmail.com">Fateme.oodar75@gmail.com</a> -->
+                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" style="padding: 20px">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td
+                                                align="center"
+                                                bgcolor="#161616"
+                                                style="
+                                                    font-size: 14px;
+                                                    line-height: 20px;
+                                                    font-family: helvetica, arial, sans-serif;
+                                                    color: #ffffff;
+                                                    vertical-align: middle;
+                                                    height: 44px;
+                                                    border-radius: 9px;
+                                                "
+                                                class="cta"
+                                            >
+                                                <a
+                                                    href="mailto:fateme.oodar75@gmail.com/"
+                                                    style="
+                                                        color: #ffffff;
+                                                        text-decoration: none;
+                                                        padding: 10px 30px;
+                                                        font-weight: lighter;
+                                                        letter-spacing: 1px;
+                                                        display: block;
+                                                    "
+                                                    target="_blank"
+                                                >
+                                                    Fateme.oodar75@gmail.com
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </section>
         </main>
-
-        <!-- <p class="header">header</p>  
-  <h3 class="footer">FOOTER</h3>  -->
+        <footer><span>Designed & Built by Fateme Oodar</span></footer>
 
         <!-- JavaScript Bundle with Popper -->
         <script
@@ -133,6 +508,8 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/particles.js"></script>
         <script src="./assets/js/app.js"></script>
     </body>
 </html>
