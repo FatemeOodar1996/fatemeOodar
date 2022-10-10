@@ -2,8 +2,10 @@ html[theme="dark"] {
     --clr-blue: #08fdd8;
     --clr-pink: #fd1056;
     --clr-text-gray: #ababab;
-    --clr-light-gray: #e0e7fd;
+    --clr-light-gray: #f0f3ff;
+    --clr-dark-gray: #1a1a1a;
     --clr-main-background: #1d1d1d;
+    --clr-box: #080808;
     --clr-text: #fff;
 }
 
@@ -13,5 +15,6 @@ html[theme="light"] {
     --clr-text-gray: #ababab;
     --clr-light-gray: #ccd6f6;
     --clr-text: #2a2a2a;
+    --clr-box: #080808;
     --clr-main-background: #ffffff;
 }
