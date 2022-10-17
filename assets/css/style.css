@@ -92,6 +92,7 @@ html[theme=light] {
   font-weight: 100;
 }
 .header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,14 +149,16 @@ nav .nav-item a span {
   color: var(--clr-blue);
   font-weight: 500;
 }
-nav .btn {
+nav .resume {
   border: 1px solid var(--clr-blue);
   color: var(--clr-blue) !important;
   transition: all ease-in-out 0.5;
   font-size: 14px;
   padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
 }
-nav .btn:hover {
+nav .resume:hover {
   background-color: rgba(0, 247, 255, 0.075);
 }
 
@@ -234,7 +237,11 @@ nav .btn:hover {
   gap: 3rem;
   align-items: center;
 }
-.hero-social svg:hover {
+.hero-social a svg {
+  fill: var(--clr-text-gray);
+  width: 29px;
+}
+.hero-social a svg:hover {
   fill: var(--clr-pink);
   transition: all 0.5s ease-out;
 }
@@ -745,6 +752,7 @@ nav .btn:hover {
   }
 }
 footer {
+  position: fixed;
   background-color: var(--clr-box);
   display: flex;
 }
@@ -773,7 +781,7 @@ body .reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
 }
 body .reveal.active {
   transform: translateY(0px);

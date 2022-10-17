@@ -56,9 +56,16 @@
         flex-direction: column;
         gap: 3rem;
         align-items: center;
-        svg:hover {
-            fill: var(--clr-pink);
-            transition: all 0.5s ease-out;
+        a {
+         
+            svg {
+                fill: var(--clr-text-gray);
+                width: 29px;
+            }
+            svg:hover {
+                fill: var(--clr-pink);
+                transition: all 0.5s ease-out;
+            }
         }
     }
 }
