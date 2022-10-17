@@ -160,3 +160,19 @@ var swiper = new Swiper(".graphicSwiper", {
         el: ".swiper-pagination",
     },
 });
+
+// smooth scrool
+window.addEventListener("scroll", reveal);
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        revealpoint = 150;
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}

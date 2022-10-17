@@ -761,9 +761,23 @@ footer span {
   font-family: "Rubik";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--clr-main-background);
+}
+body .reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+body .reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .footer {
