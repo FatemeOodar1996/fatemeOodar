@@ -23,6 +23,19 @@
             width: 200px;
             bottom: -35px;
         }
+        .lines {
+            display: flex;
+            bottom: 0px;
+            gap: 5%;
+            width: 100%;
+            position: absolute;
+            justify-content: center;
+            span {
+                background-color: #0000000e;
+                height: 135px;
+                width: 2px;
+            }
+        }
     }
     .body {
         .swiper {
@@ -104,8 +117,9 @@
                 text-align: center;
                 font-size: calc(2vw + 12px);
             }
-            .line {
-                display: none;
+
+            .lines {
+                justify-content: flex-end;
             }
         }
     }

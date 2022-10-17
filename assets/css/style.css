@@ -642,6 +642,19 @@ nav .resume:hover {
   width: 200px;
   bottom: -35px;
 }
+.graphic-projects .title .lines {
+  display: flex;
+  bottom: 0px;
+  gap: 5%;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+.graphic-projects .title .lines span {
+  background-color: rgba(0, 0, 0, 0.0549019608);
+  height: 135px;
+  width: 2px;
+}
 .graphic-projects .body .swiper {
   width: 100%;
   padding-bottom: 50px;
@@ -720,8 +733,8 @@ nav .resume:hover {
     text-align: center;
     font-size: calc(2vw + 12px);
   }
-  .graphic-projects .title .line {
-    display: none;
+  .graphic-projects .title .lines {
+    justify-content: flex-end;
   }
 }
 .contact {
