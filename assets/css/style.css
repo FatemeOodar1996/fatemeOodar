@@ -428,9 +428,9 @@ nav .resume:hover {
   line-height: 2rem;
 }
 .works .container .tab-content .tab-pane h5 > span {
-  color: var(--clr-text-gray);
+  color: var(--clr-light-gray);
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: 1.12rem;
   padding-left: 1rem;
 }
 .works .container .tab-content .tab-pane span {
@@ -653,25 +653,16 @@ nav .resume:hover {
   background-position: top center;
   width: 300px;
   height: 350px;
+  overflow: hidden;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.graphic-projects .body .image-one {
-  background-image: url("../img/nemoone-kar/sample (1).jpg");
-}
-.graphic-projects .body .image-two {
-  background-image: url("../img/nemoone-kar/sample (2).jpg");
-}
-.graphic-projects .body .image-three {
-  background-image: url("../img/nemoone-kar/sample (3).jpg");
-}
-.graphic-projects .body .image-four {
-  background-image: url("../img/nemoone-kar/sample (4).jpg");
-}
-.graphic-projects .body .image-five {
-  background-image: url("../img/nemoone-kar/sample (5).jpg");
-}
-.graphic-projects .body .image-six {
-  background-image: url("../img/nemoone-kar/sample (6).jpg");
+.graphic-projects .body .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .graphic-projects .body .swiper-slide img {
   display: block;
