@@ -165,6 +165,7 @@ var swiper = new Swiper(".graphicSwiper", {
     },
 });
 
+
 // smooth scrool
 window.addEventListener("scroll", reveal);
 function reveal() {
