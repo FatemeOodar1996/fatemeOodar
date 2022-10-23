@@ -8,10 +8,6 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     },
     effect: "cards",
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 });
 
 /* particles.json... */

@@ -328,6 +328,7 @@ nav .resume:hover {
   color: var(--clr-blue);
   content: "▹";
   line-height: 12px;
+  margin-right: 5px;
 }
 .about-me .container .body .image {
   display: flex;
